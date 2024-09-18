@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+
+</body>
+
+    <!-- create list and append child inside -->
+    <script>
+    //    function newterm(innervalue){
+    //      const li = document.createElement('li');
+    //      li.innerHTML = `${innervalue}`;
+    //      document.querySelector("li").appendChild(li);
+    //    }
+    //    newterm("typescript")
+
+    //    opimal approach
+
+    function advance(language){
+            const value1 =  document.createElement('li');
+            value1.appendChild(document.createTextNode(language))
+            // const addtext = document.createTextNode(language)
+            // value1.appendChild(addtext)
+
+             document.querySelector(".language")
+            .appendChild(value1)
+    }
+     
+    advance("typescript")
+    advance("hello")
+
+
+    
+
+    // edit
+    // use replace method
+
+    const hello = document.querySelector("li:nth-child(1)")
+    // hello.innerHTML = "vikas"; // not optimal approach
+    const value1 =  document.createElement('li');
+         value1.textContent = "myself";
+         hello.replaceWith(value1)
+    
+        //outerHtml method to replace
+
+        const newedit = document.querySelector("li:nth-child(3)");
+        newedit.outerHTML = "<li>vikas</li>";
+
+       
+
+        // remove
+
+        const delete1 = document.querySelector("li:nth-child(1)")
+        delete1.remove();
+    </script>
+</html>

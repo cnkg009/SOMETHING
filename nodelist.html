@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>node_list</title>
+    <style>
+        *{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+            const juggad = document.createElement("div");
+            console.log(juggad)
+
+            juggad.id = Math.ceil(Math.random() * 100);
+            // juggad.innerHTML = "list the top notch and i love you";
+            juggad.innerText =  "my name is vikas";
+            juggad.className = "main";
+            juggad.setAttribute("title","generated title");
+            
+            juggad.style.backgroundColor =  "red";
+            juggad.style.padding =  "20px";
+
+            // why this is not displaying in our page because it
+            // is  store in memory [[it display  when we say document to attach this child]]
+            // [[now we see how we do attaching]]
+
+            //  const yes =document.createTextNode("hello how are you");
+            //  juggad.appendChild(yes)
+
+            document.body.appendChild(juggad);
+    </script>
+</body>
+</html>

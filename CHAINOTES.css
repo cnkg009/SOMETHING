@@ -1,0 +1,19 @@
+/* [HOW to  create  programatically node list] */
+
+/* we can create element ]] */
+
+/* document.createElement('name  of the element')
+jo  app element create  karna chate ho 
+ [[to  select attribute we have by  default like class  or  id
+ (((((example ke liye ham nodelist)))))]] */
+
+ /* [[[to set custom attribute we  have method call (((((((((set Attribute))))))]]] */
+
+
+ /* setAttribute direct set  the  value */
+ /* innertext or class they genrally do overwrite jo wali hai woha par phela se define hai
+ usee par override karta hai */
+
+ /* // using appendchild instead of innerhtml for optimized code */
+
+ /* // we replace  the element with if we have refference d */
